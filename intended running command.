@@ -1,0 +1,3 @@
+This is a small test project to scrape company listings from Sunbiz.org. It runs inside a lightweight Docker container with Selenium and Pandas, fetching the first few pages of company search results and saving them to a CSV file.
+to properly run it and save the csv, run this: docker run --rm -v "$(pwd):/app" sunbiz_scraper
+This ensures that /app inside the container maps to your current Windows directory, letting the scraper generate and store sunbiz_data_page1_10.csv where you can access it right away.
